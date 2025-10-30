@@ -1,0 +1,201 @@
+/* ============================================================
+   CSS PRINCIPAL - SISTEMA MODULAR
+   ============================================================ */
+
+/* ========== BASE ========== */
+@import url('./base/_variables.css');
+@import url('./base/_reset.css');
+
+/* ========== LAYOUT ========== */
+@import url('./layout/_grid.css');
+@import url('./layout/_header.css');
+@import url('./layout/_hero.css');
+@import url('./layout/_footer.css');
+
+/* ========== COMPONENTES ========== */
+@import url('./components/_buttons.css');
+@import url('./components/_cards.css');
+@import url('./components/_forms.css');
+@import url('./components/_badges.css');
+@import url('./components/_alerts.css');
+@import url('./components/_modals.css');
+
+/* ========== UTILITÁRIOS ========== */
+@import url('./utils/_utilities.css');
+
+/* ========== CUSTOMIZAÇÕES GLOBAIS ========== */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Seleção de texto */
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-400);
+  border-radius: var(--border-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-500);
+}
+
+/* Responsividade para tabelas */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+/* Animações globais */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Classes de animação */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Loading spinner global */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--color-neutral-200);
+  border-top-color: var(--color-primary);
+  border-radius: var(--border-radius-full);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Seção com background alternado */
+.section--alternate {
+  background-color: var(--color-neutral-100);
+}
+
+.section--dark {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-100);
+}
+
+.section--gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: white;
+}
+
+/* Container responsive */
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+}
+
+/* Separador */
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  border-radius: var(--border-radius-full);
+  margin: var(--spacing-md) auto;
+}
+
+/* Gradientes de texto */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Focus visible para acessibilidade */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Impressão */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+}
+
