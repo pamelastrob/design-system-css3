@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Design CSS3 desenvolvido por Pamela Strob Mancegozo Lima">
+    <title>Design System CSS3 - Pamela Strob</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="header__logo">
+                    <svg class="header__logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    Design System
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link nav__link--active">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#sobre" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projetos" class="nav__link nav__link--has-dropdown">Projetos</a>
+                            <ul class="nav__submenu">
+                                <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Web</a></li>
+                                <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Mobile</a></li>
+                                <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Desktop</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contato" class="nav__link">Contato</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#docs" class="nav__link nav__link--has-dropdown">Documentação</a>
+                            <ul class="nav__submenu">
+                                <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Componentes</a></li>
+                                <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Layouts</a></li>
+                                <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Utils</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <button class="header__menu-toggle" id="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <span class="hero__badge">Novo Design System</span>
+                    <h1 class="hero__title">Construa Interfaces Modernas com CSS3</h1>
+                    <p class="hero__description">
+                        Um sistema de design completo e responsivo com variáveis CSS, Flexbox, Grid, componentes interativos e muito mais.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#" class="btn btn--primary btn--lg">Começar Agora</a>
+                        <a href="#sobre" class="btn btn--outline btn--lg">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div style="background: linear-gradient(135deg, #ec4899 0%, #d946ef 100%); padding: 48px; border-radius: 16px; color: white; text-align: center;">
+                        <h3>Design Elegante</h3>
+                        <p>Interface delicada e responsiva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section" id="sobre">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-size: 2.25rem; margin-bottom: 16px;">Características do Sistema</h2>
+                <div class="divider"></div>
+                <p style="font-size: 1.125rem; color: #6b7280; max-width: 600px; margin: 0 auto;">
+                    Desenvolvido com as melhores práticas de CSS3 moderno
+                </p>
+            </div>
+
+            <div class="grid" style="gap: 32px;">
+                <div class="grid-12 md-grid-6 lg-grid-4">
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Flexbox & Grid</h3>
+                            <p class="card__description">
+                                Leiautes responsivos com Flexbox e CSS Grid para criar interfaces modernas e flexíveis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-12 md-grid-6 lg-grid-4">
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Design System</h3>
+                            <p class="card__description">
+                                Variáveis CSS para cores, tipografia e espaçamento modular (8px, 16px, 24px, 32px, 48px, 64px).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-12 md-grid-6 lg-grid-4">
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Componentes Interativos</h3>
+                            <p class="card__description">
+                                Cards, botões, formulários, modals, alerts e toasts com estados visuais completos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="section section--alternate" id="projetos">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-size: 2.25rem; margin-bottom: 16px;">Projetos em Destaque</h2>
+                <div class="divider"></div>
+                <p style="font-size: 1.125rem; color: #6b7280; max-width: 600px; margin: 0 auto;">
+                    Explore nossa galeria de projetos
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card card--featured">
+                    <div class="card__image-wrapper">
+                        <div style="height: 100%; background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+                            Projeto Web
+                        </div>
+                        <span class="card__badge">Novo</span>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__header">
+                            <h3 class="card__title">Aplicação Web Moderna</h3>
+                            <div class="card__meta">
+                                <span>JavaScript</span>
+                                <span>•</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <p class="card__description">
+                            Interface moderna desenvolvida com as melhores práticas de UX/UI e performance otimizada.
+                        </p>
+                        <div class="card__tags">
+                            <span class="badge badge--primary">React</span>
+                            <span class="badge badge--secondary">TypeScript</span>
+                            <span class="badge badge--info">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-wrapper">
+                        <div style="height: 100%; background: linear-gradient(135deg, #ec4899 0%, #f9a8d4 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+                            App Mobile
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__header">
+                            <h3 class="card__title">App Mobile Responsivo</h3>
+                            <div class="card__meta">
+                                <span>React Native</span>
+                                <span>•</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <p class="card__description">
+                            Aplicativo mobile com design elegante e experiência de usuário intuitiva.
+                        </p>
+                        <div class="card__tags">
+                            <span class="badge badge--success">React Native</span>
+                            <span class="badge badge--warning">iOS</span>
+                            <span class="badge badge--info">Android</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-wrapper">
+                        <div style="height: 100%; background: linear-gradient(135deg, #d946ef 0%, #f472b6 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+                            Dashboard
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__header">
+                            <h3 class="card__title">Dashboard Analítico</h3>
+                            <div class="card__meta">
+                                <span>Vue.js</span>
+                                <span>•</span>
+                                <span>Chart.js</span>
+                            </div>
+                        </div>
+                        <p class="card__description">
+                            Painel administrativo com gráficos interativos e visualizações de dados em tempo real.
+                        </p>
+                        <div class="card__tags">
+                            <span class="badge badge--error">Vue.js</span>
+                            <span class="badge badge--success">Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Componentes -->
+    <section class="section" id="componentes">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-size: 2.25rem; margin-bottom: 16px;">Componentes do Sistema</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Botões -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="font-size: 1.875rem; margin-bottom: 24px;">Botões</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+                    <button class="btn btn--primary">Primary</button>
+                    <button class="btn btn--secondary">Secondary</button>
+                    <button class="btn btn--outline">Outline</button>
+                    <button class="btn btn--ghost">Ghost</button>
+                    <button class="btn btn--success">Success</button>
+                    <button class="btn btn--error">Error</button>
+                    <button class="btn btn--warning">Warning</button>
+                    <button class="btn btn--info">Info</button>
+                    <button class="btn btn--primary" disabled>Disabled</button>
+                </div>
+            </div>
+
+            <!-- Formulários -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="font-size: 1.875rem; margin-bottom: 24px;">Formulários</h3>
+                <form style="max-width: 500px;">
+                    <div class="form-group">
+                        <label class="form-label form-label--required">Nome</label>
+                        <input type="text" class="form-input" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input form-input--valid" placeholder="email@exemplo.com">
+                        <p class="form-feedback form-feedback--valid">Email válido</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Senha</label>
+                        <input type="password" class="form-input form-input--invalid">
+                        <p class="form-feedback form-feedback--invalid">Senha deve ter no mínimo 8 caracteres</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-textarea" rows="4" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-switch">
+                            <input type="checkbox">
+                            <span class="form-switch-slider"></span>
+                            Notificações por email
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg">Enviar Formulário</button>
+                </form>
+            </div>
+
+            <!-- Alerts -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="font-size: 1.875rem; margin-bottom: 24px;">Alerts</h3>
+                <div style="display: flex; flex-direction: column; gap: 16px; max-width: 500px;">
+                    <div class="alert alert--success">
+                        <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="alert__content">
+                            <p class="alert__title">Sucesso!</p>
+                            <p class="alert__message">Operação realizada com sucesso.</p>
+                        </div>
+                        <button class="alert__close">×</button>
+                    </div>
+                    <div class="alert alert--error">
+                        <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                        <div class="alert__content">
+                            <p class="alert__title">Erro!</p>
+                            <p class="alert__message">Ocorreu um erro ao processar sua solicitação.</p>
+                        </div>
+                        <button class="alert__close">×</button>
+                    </div>
+                    <div class="alert alert--warning">
+                        <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                        <div class="alert__content">
+                            <p class="alert__title">Atenção!</p>
+                            <p class="alert__message">Verifique os dados antes de continuar.</p>
+                        </div>
+                        <button class="alert__close">×</button>
+                    </div>
+                    <div class="alert alert--info">
+                        <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <div class="alert__content">
+                            <p class="alert__title">Info</p>
+                            <p class="alert__message">Essa é uma mensagem informativa.</p>
+                        </div>
+                        <button class="alert__close">×</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badges e Tags -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="font-size: 1.875rem; margin-bottom: 24px;">Badges e Tags</h3>
+                <div class="tags">
+                    <span class="tag tag--primary">React</span>
+                    <span class="tag tag--success">TypeScript</span>
+                    <span class="tag tag--warning">JavaScript</span>
+                    <span class="tag tag--error">CSS3</span>
+                    <span class="tag tag--info">HTML5</span>
+                </div>
+                <div style="margin-top: 16px;" class="tags">
+                    <span class="badge badge--primary">Primary</span>
+                    <span class="badge badge--secondary">Secondary</span>
+                    <span class="badge badge--success">Success</span>
+                    <span class="badge badge--error">Error</span>
+                    <span class="badge badge--warning">Warning</span>
+                    <span class="badge badge--info">Info</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section section--dark" id="contato">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-size: 2.25rem; margin-bottom: 16px; color: white;">Entre em Contato</h2>
+                <p style="font-size: 1.125rem; color: #9ca3af;">
+                    Pronto para começar seu próximo projeto?
+                </p>
+            </div>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="tags" style="justify-content: center; margin-bottom: 32px;">
+                    <a href="#" class="btn btn--primary">Enviar Email</a>
+                    <a href="#" class="btn btn--outline">Portfólio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                    <div class="footer__section">
+                    <h3 class="footer__title">Desenvolvido por</h3>
+                    <p style="color: #9ca3af; line-height: 1.75;">
+                        Pamela Strob Mancegozo Lima
+                    </p>
+                    <p style="color: #9ca3af; line-height: 1.75; font-size: 0.875rem; margin-top: 8px;">
+                        Um sistema de design moderno e responsivo desenvolvido com CSS3.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">GitHub</a>
+                        <a href="#" class="footer__social-link">LinkedIn</a>
+                        <a href="#" class="footer__social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Links Rápidos</h3>
+                    <a href="#home" class="footer__link">Home</a>
+                    <a href="#sobre" class="footer__link">Sobre</a>
+                    <a href="#projetos" class="footer__link">Projetos</a>
+                    <a href="#contato" class="footer__link">Contato</a>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Recursos</h3>
+                    <a href="#" class="footer__link">Documentação</a>
+                    <a href="#" class="footer__link">Componentes</a>
+                    <a href="#" class="footer__link">Layouts</a>
+                    <a href="#" class="footer__link">Utilitários</a>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Suporte</h3>
+                    <a href="#" class="footer__link">FAQ</a>
+                    <a href="#" class="footer__link">Changelog</a>
+                    <a href="#" class="footer__link">Reportar Bug</a>
+                    <a href="#" class="footer__link">Licença</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 Pamela Strob Mancegozo Lima. Todos os direitos reservados.
+                </p>
+                <div class="footer__links">
+                    <a href="#" class="footer__legal-link">Política de Privacidade</a>
+                    <a href="#" class="footer__legal-link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para menu mobile -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        const overlay = document.getElementById('overlay');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        // Fechar menu ao clicar em link
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        let lastScroll = 0;
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
+
