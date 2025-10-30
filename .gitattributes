@@ -1,0 +1,13 @@
+# Garantir encoding correto
+*.css text eol=lf charset=utf-8
+*.html text eol=lf charset=utf-8
+*.md text eol=lf charset=utf-8
+
+# Binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+
