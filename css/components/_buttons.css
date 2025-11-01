@@ -1,6 +1,4 @@
-/* ============================================================
-   BOTÕES COM ESTADOS VISUAIS
-   ============================================================ */
+/* Botoes com estados visuais (hover, focus, active, disabled) */
 
 .btn {
   display: inline-flex;
