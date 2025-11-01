@@ -1,6 +1,4 @@
-/* ============================================================
-   HEADER E NAVEGAÇÃO
-   ============================================================ */
+/* Header e Navegacao - Menu responsivo com submenu */
 
 .header {
   position: sticky;
@@ -37,7 +35,7 @@
   fill: currentColor;
 }
 
-/* ========== NAVEGAÇÃO PRINCIPAL ========== */
+/* Navegacao Principal */
 
 .nav {
   display: none;
@@ -89,7 +87,7 @@
   margin-left: var(--spacing-xs);
 }
 
-/* ========== SUBMENU DROPDOWN ========== */
+/* Submenu Dropdown */
 
 .nav__submenu {
   position: absolute;
