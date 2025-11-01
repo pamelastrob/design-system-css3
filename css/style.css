@@ -1,18 +1,19 @@
-/* ============================================================
-   CSS PRINCIPAL - SISTEMA MODULAR
-   ============================================================ */
+/* 
+   CSS Principal - Sistema Modular
+   Desenvolvido por: Pamela Strob Mancegozo Lima
+*/
 
-/* ========== BASE ========== */
+/* Base */
 @import url('./base/_variables.css');
 @import url('./base/_reset.css');
 
-/* ========== LAYOUT ========== */
+/* Layout */
 @import url('./layout/_grid.css');
 @import url('./layout/_header.css');
 @import url('./layout/_hero.css');
 @import url('./layout/_footer.css');
 
-/* ========== COMPONENTES ========== */
+/* Componentes */
 @import url('./components/_buttons.css');
 @import url('./components/_cards.css');
 @import url('./components/_forms.css');
@@ -20,12 +21,10 @@
 @import url('./components/_alerts.css');
 @import url('./components/_modals.css');
 
-/* ========== UTILITÁRIOS ========== */
+/* Utilitarios */
 @import url('./utils/_utilities.css');
 
-/* ========== CUSTOMIZAÇÕES GLOBAIS ========== */
-
-/* Smooth scroll */
+/* Customizacoes Globais */
 html {
   scroll-behavior: smooth;
 }
